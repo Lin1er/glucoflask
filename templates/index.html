@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>Gluco-Diacto</title>
+  </head>
+  <body>
+    <div>
+      <h1>Gluco-Diacto</h1>
+
+      <form action="/submit-form" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required />
+
+        <div class="mydict">
+          <label>Gender Select</label>
+          <div>
+            <label>
+              <input type="radio" name="radio" checked="" value="0">
+              <span>Women</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="1">
+              <span>Men</span>
+            </label>
+            <label>
+              <input type="radio" name="radio" value="2">
+              <span>Divided</span>
+            </label>
+            
+          </div>
+        </div>
+
+        <label for="bodyheight">Body Height (cm)</label>
+        <input type="number" id="bodyheight" name="bodyheight" required />
+
+        <label for="bodyweight">Body Weight (kg)</label>
+        <input type="number" id="bodyweight" name="bodyweight" required />
+
+        <label>Glucose Level</label>
+        <div name="glucose" class="glucose">
+          <label for="gdp">GDP:</label>
+          <input type="number" name="gdp" id="gdp">
+          <label for="gd2pp">GD2PP:</label>
+          <input type="number" name="gd2pp" id="gd2pp">
+        </div>
+
+        <button type="submit">Submit Data</button>
+      </form>
+    </div>
+  </body>
+</html>
